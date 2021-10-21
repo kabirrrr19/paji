@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/loginstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a href="#" class="navbar-brand">
+        <!-- Logo Image -->
+        <img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+        <!-- Logo Text -->
+        <span class="text-uppercase font-weight-bold">GO VEGAN</span>
+        </a>
+
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="" class="nav-link">Login <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a href="/index" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/register" class="nav-link">Register</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    {{#if message}}
+        <h4 class='alert alert-danger' id="errMessage">{{message}}</h4>
+    {{/if}}
+    {{!-- Login --}}
+    <div class="container">
+    <div class="row">
+        <form class="box col-lg-6 col-md-6 col-sm-6 col-9" action="/auth/login" method="POST">
+            <h1>Login</h1>
+            <p class="text-muted"> Please enter your login and password!</p> 
+            <input type="text" name="email" placeholder="E-mail"> 
+            <input type="password" name="password" placeholder="Password"> 
+            <input type="submit" name="" value="Login" href="#">
+            <div class="col-md-12">
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.instagram.com/go_go_vegan_rangers/" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://bit.ly/3gUnwgT" target="_blank" class="icoGoogle" title="Google +"><i class="fab fa-google"></i></a></li>
+                </ul>
+        </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
