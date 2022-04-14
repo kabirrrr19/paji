@@ -35,7 +35,7 @@ app.set('view engine', 'hbs');
 
 db.connect( (err) => {
     if (err) {
-        console.log(err);
+        console.log("There is an error : " + err.message);
     }
     else{
         console.log('mysql Connected');
