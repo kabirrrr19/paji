@@ -14,7 +14,7 @@ const db = mysql.createConnection({
 exports.login = async(req, res) => {
     try {
         const { email, password } = req.body;
-
+        console.log(email + " " + password)
         if ( !password && !email ) {
             return res.status(400).render('login', { 
                 message : 'Please provide an email and a password'
@@ -33,33 +33,40 @@ exports.login = async(req, res) => {
 
         db.query('SELECT * FROM users WHERE email = ?', [email], async(error, results) => {
                                                     // results[0] means the first result and can access its values
-            if ( !results || !(await bcrypt.compare(password, results[0].password) ) ) {
-                
-                res.status(400).render('login', {
-                    message : 'The Email or the password is incorrect'
+            if (results.length === 0) {
+                return res.status(400).render("login", {
+                  message: "Please provide a valid email id",
                 });
-
             }
             else {
-
-                const id = results[0].id;
-                                // { id: id } shortened as { id }
-                const token = jwt.sign({ id }, process.env.JWT_SECRET, {
-                    expiresIn : process.env.JWT_EXPIRES_IN
-                });
-
-                console.log("The token is : " + token);
-
-                const cookieOptions = {
-                    express : new Date(
-                        Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
-                    ),
-                    httpOnly : true
+                const pwd = await results[0].password;
+                if ( !results || !(await bcrypt.compare(password, pwd) ) ) {
+                    
+                    res.status(400).render('login', {
+                        message : 'The Email or the password is incorrect'
+                    });
                 }
-
-                res.cookie('jwt', token, cookieOptions);
-                res.status(200).render('index');
-
+                else {
+    
+                    const id = results[0].id;
+                                    // { id: id } shortened as { id }
+                    const token = jwt.sign({ id }, process.env.JWT_SECRET, {
+                        expiresIn : process.env.JWT_EXPIRES_IN
+                    });
+    
+                    console.log("The token is : " + token);
+    
+                    const cookieOptions = {
+                        express : new Date(
+                            Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
+                        ),
+                        httpOnly : true
+                    }
+    
+                    res.cookie('jwt', token, cookieOptions);
+                    res.status(200).render('index');
+    
+                }
             }
 
         })
