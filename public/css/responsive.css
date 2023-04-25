@@ -1,0 +1,253 @@
+/*
+
+Template: Sofbox - Responsive Software Landing Page
+Author: iqonicthemes.in
+Version: 3.0
+Design and Developed by: iqonicthemes.in
+
+NOTE: This file contains the styling for responsive Template.
+
+*/
+
+/*****************
+================================================
+ (  Media Queries  )
+================================================
+ *******************/
+@media(min-width:1601px) {
+	.get-feature img { width: 74%; }
+}
+@media(max-width:1399px) {
+	.iq-banner .banner-text h1 { font-size: 56px; }
+	#software-features { margin-top: 0; }
+	.iq-objects-software .iq-objects-02 { bottom: 13%; }
+	.get-feature img { width: 100%; margin-top: -86px; margin-left: 0; }
+	.iq-breadcrumb .banner-img{max-width: 120%;}
+	.animation-shap .shap-bg, .animationnew-shap .shap-bg{width: 470px;height: 470px;}
+}
+@media(max-width:1365px) {
+	.iq-banner .banner-text h1 { font-size: 50px; }
+	.owl-carousel .owl-nav .owl-prev { left: -4%; }
+	.owl-carousel .owl-nav .owl-next { right: -4%; }
+	.iq-works-img { width: 110%; }
+	.animation-shap .shap-bg, .animationnew-shap .shap-bg{width: 400px; height: 400px;}
+	.iq-breadcrumb .banner-img{max-width: 110%;}
+}
+@media(max-width:1199px) {
+
+	/*----------------
+	Section padding 
+	----------------*/
+	.overview-block-ptb { padding: 80px 0; }
+	.overview-block-pt { padding: 80px 0 0; }
+	.overview-block-pb { padding: 0 0 80px;  }
+	.overview-block-pb.how-works{padding: 0 0 80px;}
+	header .navbar .navbar-nav>li { margin: 0 20px 0 0; }
+	header .container-fluid, .iq-banner .container-fluid, .iq-banner-04 .container-fluid { padding: 0px 45px; }
+	.iq-banner .banner-text h1 { font-size: 44px; }
+	.iq-banner .banner-text p.iq-mb-40 { margin-bottom: 20px; }
+	.iq-banner .banner-text { margin-bottom: 40px; }
+	.iq-banner .banner-img { width: 116%; }
+	.iq-works-img { width: 100%; }
+	.iq-banner .banner-img { width: 100%; }
+	.owl-carousel .owl-nav .owl-prev { left: 0%; }
+	.owl-carousel .owl-nav .owl-next { right: 0%; }
+	.iq-objects-software .iq-objects-03 { top: 15%; }
+	.iq-objects-software .iq-objects-01 { top: 16%; }
+	.iq-newsletter .form-group { width: 67%; }
+	.info-share li { margin: 0px 2px; }
+	.container { max-width: 94%; }
+	.iq-footer-box .iq-icon i { margin-right: 9px; }
+	.iq-blog-meta ul li { font-size: 15px; }
+	.iq-fancy-box { padding: 40px 13px 25px 13px; }
+	.iq-banner-04 .banner-text h1 { font-size: 46px; }
+	.iq-banner-04 .banner-text p.iq-mb-40 { margin-bottom: 20px; }
+	.Product-works { padding-bottom: 80px; }
+	.iq-more-info .row.iq-mt-30 { margin: 30px 0; }
+	.our-pricing { padding-top: 0; }
+	.get-feature .iq-text-right { padding-right: 0; }
+	.get-feature img { width: 100%; margin-top: 0; margin-left: 0; }
+	.iq-tab .nav-item a{font-size: 14px;}
+	.animation-shap .shap-bg, .animationnew-shap .shap-bg{width: 300px; height: 300px;}
+	.how-works { padding-bottom: 0; }
+	.overview-block-pb.how-works .container-fluid h2{font-size: 30px; line-height: 30px;}
+	.text-left.align-self-center h3 {font-size: 28px; line-height: 40px;}
+	.no-gutters .iq-shadow i{font-size: 30px;}
+	.iq-objectsnew .iq-objects-04{border: 40px solid var( --primary-theme-color);width: 400px;height: 400px; top: 9%;}
+	.iq-objects-softwarenew .iq-objects-03{border: 40px solid var( --primary-theme-color);width: 400px;height: 400px;}
+	.iq-rmt-80{margin-top: 80px;}
+
+}
+@media(max-width:992px) {
+	header { padding: 10px 0; }
+	.container { max-width: 74%; }
+	.navbar-light .navbar-toggler { border: 1px solid var(--white-theme-color); background: var(--white-theme-color); }
+	.iq-banner-03 .banner-text h1 { font-size: 35px; }
+	.iq-banner-03 { padding-bottom: 30px; }
+	.iq-banner-03 .banner-text p { margin-bottom: 15px; }
+	.r-mt-30 { margin-top: 30px; }
+	.r-mt-40 { margin-top: 40px; }
+	.iq-banner-02 .banner-text h1 { font-size: 54px; }
+	.iq-banner-02 .banner-text p { margin: 0 0 20px 0; padding: 0; }
+	.navbar-light .navbar-toggler span { color: var( --primary-theme-color); }
+	.navbar-toggler { padding: 0px 10px; font-size: 38px }
+	.navbar-toggler:focus, .navbar-toggler:hover { outline: none; }
+	header .navbar .navbar-nav .nav-item a::before { display: none; }
+	header .navbar .navbar-collapse { background: var(--white-theme-color); margin-top: 10px; }
+	header .navbar .navbar-nav>li { margin: 0; }
+	header .navbar .navbar-nav .nav-item a { padding: 10px 15px; color: #333; }
+	header .navbar .navbar-nav .nav-item a:hover, header .navbar .navbar-nav .nav-item a:focus, header .navbar .navbar-nav .nav-item a.active, header .navbar .navbar-nav .nav-item a.active:focus, header .navbar .navbar-nav .nav-item a.active:hover { color: var( --primary-theme-color); }
+	header .button, header .button-line { display: none; }
+	.how-works { padding-top: 0; }
+	.iq-banner .iq-waves .waves { width: 10rem; height: 10rem; }
+	.iq-banner .iq-waves { left: -50px; top: -50px; }
+	.iq-software-demo { width: 100%; top: 0; position: inherit; text-align: center; }
+	.iq-objects-software .iq-objects-02 { bottom: 38%; }
+	.iq-objects-software .iq-objects-03 { top: 2%; left: 50%; }
+	.iq-newsletter .form-group { width: 75%; }
+	.heading-title p { padding: 0; }
+	.heading-title { margin-bottom: 40px; }
+	.iq-banner-03 .banner-img { width: 100%; }
+	.iq-banner-03 .waves-box { position: absolute; top: 23%; left: 32%; }
+	.iq-banner-04 .banner-text { margin-top: 8%; }
+	.iq-footer .footer-top { padding-bottom: 40px; }
+	.Product-works { padding: 80px 0; }
+	.iq-feature.stap-left:before { display: none; }
+	.iq-feature.stap-right:before, .iq-banner-06 .banner-objects, .iq-banner-02.no-before .banner-objects { display: none; }
+	.iq-pricing-5:hover, .iq-pricing-5.active { margin: 20px; }
+	.iq-counter-box-1 .heading-title p { padding: 0; }
+	.iq-banner-02.style-1 .banner-objects .banner-objects-01 img, .iq-banner-02.style-1 .banner-objects .banner-objects-04 img { width: 75%; }
+	.iq-banner-02.style-1 .banner-objects .banner-objects-02 { width: 250px; height: 250px; left: 0; }
+	.get-feature img { margin-bottom: 0; }
+	.bg-full-features .container-fluid.no-padding { padding: 0 15px !important; }
+	.bg-full-features .d-inline-block.w-100.h-100.iq-parallax { display: none !important; }
+	.iq-tab.horizontal .nav-item a{padding: 10px 6px;}
+	.iq-banner-08 .banner-img {width: 100%; margin-top: 30px;}
+	.pattern-dot .iq-about, .iq-counter-box.pattern-dot .iq-about img { margin-bottom: 0; }
+	.iq-r-mb-15{margin-bottom: 15px;}
+	.iq-tab.horizontal .nav-item{width: 24%;}
+	.align-self-center h3{font-size: 27px; line-height: 36px;}
+	.banner-text .justify-content-between .align-self-center h1{font-size: 36px;}
+	.banner-text .justify-content-between .align-self-center h5{font-size: 18px;}
+	.iq-banner .banner-text .watch-img{right: 82%;}
+	.iq-breadcrumb .banner-ani{width: 30%}
+	header.new-header .navbar .navbar-nav .nav-item a{padding: 10px 15px;}
+	header.new-header .navbar .navbar-nav .nav-item a.active{color: var( --primary-theme-color);}
+
+}
+@media(max-width:979px) {
+	.container { max-width: 94%; }
+	.iq-objects-software .iq-objects-03 { left: 46%; }
+	.iq-banner-04 .banner-img { margin-top: 30px; }
+	.iq-banner-06 .banner-text p { margin: 0; padding: 0; }
+	.iq-banner-02.style-1 .banner-objects .banner-objects-02 { display: none; }
+	.iq-tab.horizontal .nav-item{width: 26%;}
+	.iq-r-mb-15 { margin-bottom:15px;}
+	.iq-objects-softwarenew .iq-objects-02{display: none;}
+	.iq-breadcrumb .banner-img{max-width: 100%;}
+	.iq-breadcrumb .banner-ani{width: 24%; right: 14%;}
+
+}
+@media(max-width:767px) {
+
+	/*----------------
+		Section padding 
+		----------------*/
+	.overview-block-ptb { padding: 50px 0; }
+	.overview-block-pt { padding: 50px 0 0; }
+	.overview-block-pb { padding: 0 0 50px; }
+	h2 { font-size: 34px; line-height: 40px;}
+	h3 { font-size: 30px; }
+	.iq-box-shadow { padding: 60px 20px 0; margin-top: 0; }
+	.container { max-width: 100%; }
+	.heading-title { margin-bottom: 40px; }
+	.iq-banner .banner-text h1 { font-size: 38px; }
+	header .container-fluid, .iq-banner .container-fluid, .iq-banner-04 .container-fluid { padding: 0px 15px; }
+	.iq-banner-04 .banner-text { margin-top: 13%; }
+	.iq-more-info .row.iq-mt-30 .col-sm-4 { margin: 15px 0; }
+	.iq-objects-software .iq-objects-03 { left: 39%; }
+	.iq-banner-03 .banner-img { margin-top: 20px; }
+	.iq-banner-03 .banner-text h1 { font-size: 30px; }
+	.r4-mt-30 { margin-top: 30px; }
+	.r4-mt-40 { margin-top: 40px; }
+	#compare-services .row .col-sm-2.align-self-center h2 { margin: 20px 0 30px; }
+	.iq-newsletter .form-group { width: 100%; }
+	.iq-newsletter .form-inline { display: inline-block; width: 100%; text-align: center; }
+	.iq-newsletter .form-inline .button { margin-left: 0; }
+	.footer-info .map { height: 350px; position: inherit; }
+	.info-share { margin: 20px 0 0; text-align: center; }
+	.iq-banner-02 .banner-text h1 { font-size: 44px; }
+	.iq-accordion-details .col-sm-3 img { width: 100%; }
+	.iq-banner-02 .banner-img { margin-bottom: -20px; }
+	.iq-banner-03.overview-block-pt { padding-top: 80px; }
+	.Product-works { padding: 50px 0; }
+	.iq-footer .info-share { margin: 0; }
+	.iq-banner-05 p { margin: 0; }
+	.footer { text-align: center; }
+	.info-share { text-align: left; margin-bottom: 10px; }
+	.iq-banner-02 .banner-video { width: 400px; height: 230px; }
+	.iq-banner-02.style-1 .button-blue-shadow.iq-mr-30 { margin-right: 0; }
+	.iq-banner-02.style-1 .banner-img { margin-top: 40px; }
+	.iq-footer3 .col-lg-3.col-md-6.col-sm-6.iq-mtb-20 { margin: 10px 0; }
+	.iq-footer3 .link, .iq-footer3 .iq-copyright { display: inline-block; text-align: center; width: 100%; }
+	.iq-banner-08 p.iq-mb-40 { margin-bottom: 0; }
+	.dummy-from .rounded.iq-mall-20 { margin: 0; padding: 20px; }
+	.iq-banner.wave-one .banner-text {
+    margin-top: 15%;}
+    .iq-banner-11 .container-fluid { padding: 20px; }
+    .iq-banner-11 .banner-text h1 { font-size: 40px; } 
+    .iq-banner-09 .form-group { width: 100%; }
+    .iq-banner-09 .form-inline .button { margin-left: 0; }
+    .iq-newsletter .form-group { margin-bottom: 20px; }
+    .iq-tab.horizontal .nav-item{width: 43%;}
+    .animation-shap .shap-bg, .animationnew-shap .shap-bg{width: 250px; height: 250px;}
+	.iq-objectsnew .iq-objects-04{border: 20px solid var( --primary-theme-color);width: 300px;height: 300px; right: 10%; top: 0;}
+	.iq-objects-softwarenew .iq-objects-03{border: 20px solid var( --primary-theme-color);width: 300px;height: 300px;}
+	.iq-banner-12 .banner-text { z-index: 9; position: relative; margin-top: 30%; margin-bottom: 3%; }
+	.iq-banner-12 .banner-text .banner-phone{width:30%;left: -9px; bottom: -20px; }
+	.iq-banner-12 .banner-objects .banner-objects-02{display: none;}
+	.iq-banner-12 .banner-objects .banner-objects-01{display: none;}
+	.iq-banner .banner-text .banner-phone{right: 0px;bottom: -37px;}
+	.iq-banner .banner-text .watch-img{right: 79%;}
+	.iq-fancy-boxnew{padding: 0px 15px 25px 15px;}
+	.iq-banner-13 .banner-text{margin-top: 13%;}
+	.iq-tw-9 {font-weight: 700;}
+	.iq-coming .big-text {
+		font-size: 40px;}
+		.iq-error .big-text {
+			font-size:100px;
+		}
+}
+@media(max-width:479px) {
+	.iq-banner .banner-text h1, .iq-banner-07 .banner-text h1, .iq-banner-08 .banner-text h1 { font-size: 28px; line-height: normal;}
+	.iq-banner .banner-text { margin-top: 50px; }
+	.iq-banner .banner-img, .iq-works-img { margin-top: 20px; }
+	.iq-objects-software .iq-objects-03 { left: 0; }
+	.iq-banner-02 .banner-text h1 { font-size: 36px; }
+	.iq-banner-04 .banner-text h1 { font-size: 34px; }
+	.iq-banner-05 .banner-text h1 { font-size: 35px; }
+	.iq-banner-05 p { padding: 50px 0 20px 0; }
+	.iq-counter-box .iq-about img { margin-bottom: 150px; }
+	.info-share { text-align: left; margin-bottom: 10px; }
+	.iq-banner-02 .banner-video { width: 290px; height: 170px; }
+	.button.iq-mr-20, .button-blue-shadow.iq-mr-20 { margin-right: 10px; }
+	.rbtn{padding: 10px 24px;font-size: 14px;}
+	.iq-tab.horizontal .nav-item a{padding: 8px 4px; font-size: 12px;}
+	.iq-tab.horizontal .nav-item{width: 50%;}
+	.iq-objectsnew .iq-objects-04{border: 20px solid var( --primary-theme-color);width: 200px;height: 200px; right: 10%; top: 0;}
+	.iq-objects-softwarenew .iq-objects-03{border: 20px solid var( --primary-theme-color);width: 200px;height: 200px;}
+	.iq-objectsnew .iq-objects-02{display: none;}
+	.iq-objectsnew .iq-objects-03{display: none;}
+	.iq-objects-softwarenew .iq-objects-01{display: none;}
+	.iq-objects-softwarenew .iq-objects-02{display: none;}
+	.pr-3{padding-right: 10px !important;}
+	.iq-rpr-10{padding-right: 10px;}
+	.animation-shap .shap-bg, .animationnew-shap .shap-bg{height: 175px;width: 175px;}
+	.iq-r-mb-15{margin-bottom: 15px;}
+	h2{font-size: 30px;}
+	.iq-banner-12 .banner-img{width: 130%;}
+	.banner-text .justify-content-between .align-self-center h1{font-size: 30px; line-height:40px;}
+	.iq-footerr .iq-copyright.iq-ml-10{margin-top: 10px; font-size: 12px;}
+	.iq-coming .big-text {
+		font-size: 32px;}
+}

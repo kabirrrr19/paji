@@ -1,0 +1,53 @@
+/*
+
+Template: Sofbox - Responsive Software Landing Page
+Author: iqonicthemes.in
+Version: 3.0
+Design and Developed by: iqonicthemes.in
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template. Please do not change anything here! write in a custom.css file if required!
+
+*/
+
+
+*::-moz-selection { background: var( --primary-theme-color); color: var(--white-theme-color); text-shadow: none; }
+::-moz-selection { background: var( --primary-theme-color); color: var(--white-theme-color); text-shadow: none; }
+::selection { background: var( --primary-theme-color); color: var(--white-theme-color); text-shadow: none; }
+
+header.menu-sticky.header-white { background: var(--white-theme-color); }
+
+/*---------------------------------------------------------------------
+                            Text Color 
+-----------------------------------------------------------------------*/
+.iq-banner .iq-video, .iq-works-box .step, .iq-banner-04 .iq-video,  .iq-footer .iq-contact .contact-block i, .iq-footer .post-blog a:hover, .iq-footer .footer-menu li a:hover, .iq-footer .iq-copyright a:hover, .iq-font-blue, .iq-fancy-box .iq-icon,  .iq-blog-detail a:hover, .iq-blog-detail .blog-title a:hover h5, .iq-footer-box .iq-icon i, .footer-copyright a, .iq-breadcrumb .breadcrumb li.active, .iq-breadcrumb .breadcrumb li a:hover, .pagination .page-link, .iq-widget-menu ul li a span:hover, .iq-widget-menu ul ul li a span:hover,  .iq-tags li a:hover, .iq-widget-archives li a:hover, .iq-comment-list .iq-comment-metadata i, header.header-fancy .navbar .navbar-nav .nav-item a:hover, header.header-fancy .navbar .navbar-nav .nav-item a:focus, header.header-fancy .navbar .navbar-nav .nav-item a.active, header.header-fancy .navbar .navbar-nav .nav-item a.active:focus, header.header-fancy .navbar .navbar-nav .nav-item a.active:hover, header.header-white .navbar .navbar-nav .nav-item a:hover, header.header-white .navbar .navbar-nav .nav-item a:focus, header.header-white .navbar .navbar-nav .nav-item a.active, header.header-white .navbar .navbar-nav .nav-item a.active:focus, header.header-white .navbar .navbar-nav .nav-item a.active:hover,  .icon-bg i,  .iq-banner-03 .iq-video, .iq-fancy-box-1 .iq-icon,  .iq-fancy-box-1 .iq-icon, .iq-icon, .media.service-box i, .iq-works-boxes .icons i { color: var( --primary-theme-color); }
+
+/*---------------------------------------------------------------------
+                          Background Color 
+-----------------------------------------------------------------------*/
+.heading-title .title:before, .button,  .border-box:after,   .iq-fancy-box:hover .iq-icon, .iq-client:before, .owl-carousel .owl-nav i:hover, .iq-team .share ul li a:hover, .iq-accordion .ad-title:before, .owl-carousel.owl-theme .owl-dots .owl-dot.active span, .owl-carousel.owl-theme .owl-dots .owl-dot:hover span, .owl-carousel.arrow-1 .owl-nav i:hover, .button.bt-white:hover, .button.bt-white:focus, .info-share li a:hover, .iq-error h6, .pagination .page-item.active .page-link, .blue-bg, header.header-white .navbar .navbar-nav .nav-item a::before, .iq-feature .step-number, .iq-icon:hover,.iq-fancy-boxnew.text-center .icon-bg,.animation-shap .shap-bg, .animationnew-shap .shap-bg, .iq-pricing.active .price-title { background: var( --primary-theme-color); }
+header.menu-sticky, #back-to-top .top:hover { background: rgba(74, 196, 243, 0.9); }
+
+/*---------------------------------------------------------------------
+                       Background Gradient 
+---------------------------------------------------------------------*/
+.iq-over-blue-10:before { background: rgba(74, 196, 243, 0.1); }
+.iq-over-blue-20:before { background: rgba(74, 196, 243, 0.2); }
+.iq-over-blue-30:before { background: rgba(74, 196, 243, 0.3); }
+.iq-over-blue-40:before { background: rgba(74, 196, 243, 0.4); }
+.iq-over-blue-50:before { background: rgba(74, 196, 243, 0.5); }
+.iq-over-blue-60:before { background: rgba(74, 196, 243, 0.6); }
+.iq-over-blue-70:before { background: rgba(74, 196, 243, 0.7); }
+.iq-over-blue-80:before { background: rgba(74, 196, 243, 0.8); }
+.iq-over-blue-85:before { background: rgba(74, 196, 243, 0.85); }
+.iq-over-blue-90:before { background: rgba(74, 196, 243, 0.9); }
+.iq-over-blue-95:before { background: rgba(74, 196, 243, 0.95); }
+.iq-works-box:hover, .icon-bg { -moz-box-shadow: 0 0 40px rgba(74, 196, 243, 0.6); }
+.iq-team .iq-team-img:before { background: rgba(74, 196, 243, 0); background: -moz-linear-gradient(top, rgba(74, 196, 243, 0) 0%, rgba(74, 196, 243, 1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(74, 196, 243, 0)), color-stop(100%, rgba(74, 196, 243, 1))); background: -webkit-linear-gradient(top, rgba(74, 196, 243, 0) 0%, rgba(74, 196, 243, 1) 100%); background: -o-linear-gradient(top, rgba(74, 196, 243, 0) 0%, rgba(74, 196, 243, 1) 100%); background: -ms-linear-gradient(top, rgba(74, 196, 243, 0) 0%, rgba(74, 196, 243, 1) 100%); background: linear-gradient(to bottom, rgba(74, 196, 243, 0) 0%, rgba(74, 196, 243, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var( --primary-theme-color)', endColorstr='var( --primary-theme-color)', GradientType=0); }
+
+/*---------------------------------------------------------------------
+                      		 Boder Color 
+---------------------------------------------------------------------*/.iq-sidebar-widget 
+ .iq-objects-software .iq-objects-03,  .owl-carousel.owl-theme .owl-dots .owl-dot.active span, .owl-carousel.owl-theme .owl-dots .owl-dot:hover span, .contact-form .section-field input:focus, .contact-form .section-field.textarea textarea:focus, .info-share li a:hover, .pagination .page-item.active .page-link, .iq-widget-search input:focus, .iq-tags li a:hover, .blockquote, blockquote{ border-color: var( --primary-theme-color); }
+@media(max-width:992px) {
+	.navbar-light .navbar-toggler span, header .navbar .navbar-nav .nav-item a:hover, header .navbar .navbar-nav .nav-item a:focus, header .navbar .navbar-nav .nav-item a.active, header .navbar .navbar-nav .nav-item a.active:focus, header .navbar .navbar-nav .nav-item a.active:hover { color: var( --primary-theme-color); }
+}
